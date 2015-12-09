@@ -36,7 +36,7 @@ public class MySqlOrderDao implements OrderDAO {
                                                         "where idCustomer = ? and `order`.idOrder=? limit 1) as t2 ) " +
                                                         "where idCustomer = ? and isConfirmed=0 limit 1";
 
-    private static final String GET_PRODUCTS_FOR_ORDER_SQL = "SELECT product.idProduct, product.`name`, product.description, product.price " +
+    private static final String GET_PRODUCTS_FOR_ORDER_SQL = "SELECT product.idProduct, product.`name`, product.description, product.price, product.image " +
                                                                 "from `order` " +
                                                                 "inner join orderproduct on `order`.idOrder = orderproduct.idOrder " +
                                                                 "inner join product on orderproduct.idProduct = product.idProduct " +
@@ -252,6 +252,7 @@ public class MySqlOrderDao implements OrderDAO {
                     product.setName(resultSet.getString(2));
                     product.setDescription(resultSet.getString(3));
                     product.setPrice(resultSet.getDouble(4));
+                    product.setImagePath(resultSet.getString(5));
                     products.add(product);
                 }
             }
