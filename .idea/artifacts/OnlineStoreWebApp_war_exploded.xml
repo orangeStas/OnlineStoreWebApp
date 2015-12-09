@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OnlineStoreWebApp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OnlineStoreWebApp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="OnlineStoreWebApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OnlineStoreWebApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="log4j-1.2.9" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.37-bin" />
+          <element id="library" level="project" name="commons-codec-1.9" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="module" name="JUnit4" module-name="OnlineStoreWebApp" />
+          <element id="file-copy" path="$APPLICATION_HOME_DIR$/lib/junit.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
