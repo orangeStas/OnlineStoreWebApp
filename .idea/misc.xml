@@ -3,6 +3,9 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" value="D:/javadoc" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -20,6 +23,13 @@
     <option name="LOCALE" />
     <option name="OPEN_IN_BROWSER" value="true" />
     <option name="OPTION_INCLUDE_LIBS" value="false" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
